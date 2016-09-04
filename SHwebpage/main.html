@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+        <style>
+        td{
+            padding:0px!important;
+            width:33%!important;
+        }
+        .btn-default{
+            border:none;
+        }
+        .thumbnail{
+            width:23%!important;
+            float:left;
+            margin-bottom: 0px;
+            border: 0px;
+        }
+        .thumbnail .caption{
+            padding-bottom: 0px;
+        }
+        h5{
+            margin-top:5px;
+            margin-bottom: 5px;
+        }
+        .table{
+            margin-bottom: 0px;
+        }
+        .quater > tbody > tr > td{
+            width:25%!important;
+        }
+        li{
+            list-style: none;
+            font-size: 10px;
+        }
+        ul{
+            padding-left: 0px;
+            text-align: left;
+        }
+        input[type="radio"], input[type="checkbox"]{
+            margin-right: 3px;
+        }
+        .btn{
+            padding: 0px;
+            border : whitesmoke;
+        }
+        .top{
+            padding:5px!important;
+        }
+        .list-group-item{
+            background-color: rgba(255, 255, 255, 0);
+            border:none;
+            color: whitesmoke;
+        }
+        </style>
+    </head>
+    
+    <body>
+	
+        <div class="section">
+            <div class="container">
+                <div class="row" style="margin-top:0px!important;margin-bottom:0px!important;">
+                    <div class="col-md-12 text-right" style="padding-right:0px!important;">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default top">로그인</a>
+                            <a href="#" class="btn btn-default top">회원가입</a>
+                            <a href="#" class="btn btn-default top">오시는 길</a>
+                            <a href="#" class="btn btn-default top">공식 블로그</a>
+                            <a href="#" class="btn btn-default top">공식 페이스북</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:0px!important;">
+                    <div class="col-md-2" style="background-color:black;padding-left:0px!important;padding-right:0px!important;">
+                        <img src="./main/sidebar.png" style="position:absolute;z-index:-1000" class="img-responsive"/>
+                        <img src="./main/logo.png" class="img-responsive" style="z-index:100"/>
+                        <ul class="list-group" style="background-color:;">
+                            <li class="list-group-item"><img src="./main/Introduction.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Beauty Program.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/community.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Sohyang Event.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Reservation.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Interview.png" style="margin-left:10%;"/></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10" style="background-color:whitesmoke;padding-left:0px!important;padding-right:0px!important;">
+                        <div id="carousel-example" data-interval="false" class="carousel slide"
+                        data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="./main/main_careselimg.png">
+                                    <div class="carousel-caption">
+                                        <h2>Title</h2>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example" data-slide="prev"><i class="icon-prev  fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#carousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="col-md-12" style="padding:0px!important">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <img src="./main/main01.png" class="img-responsive">
+                                        </td>
+                                        <td>
+                                            <img src="./main/main012.png" class="img-responsive">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <img src="./main/main02.png" class="img-responsive">
+                                        </td>
+                                        <td>
+                                            <img src="./main/main03.png" class="img-responsive">
+                                        </td>
+                                        <td>
+                                            <img src="./main/main03.png" class="img-responsive">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="./main/main04.png" class="img-responsive">
+                                        </td>
+                                        <td>
+                                            <img src="./main/main05.png" class="img-responsive">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <p>magazine S people</p>
+                                            <div class="thumbnail">
+                                                <img src="./main/main101.png" class="img-responsive">
+                                                <div class="caption">
+                                                    <h5>Thumb label</h5>
+                                                    <p>Donec id elit.</p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail">
+                                                <img src="./main/main102.png" class="img-responsive">
+                                                <div class="caption">
+                                                    <h5>Thumb label</h5>
+                                                    <p>Donec id elit.</p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail">
+                                                <img src="./main/main103.png" class="img-responsive">
+                                                <div class="caption">
+                                                    <h5>Thumb label</h5>
+                                                    <p>Donec id elit.</p>
+                                                </div>
+                                            </div>
+                                            <div class="thumbnail">
+                                                <img src="./main/main104.png" class="img-responsive">
+                                                <div class="caption">
+                                                    <h5>Thumb label</h5>
+                                                    <p>Donec id elit.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="./main/main11.png" class="img-responsive">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <img src="./main/main_20.png" class="img-responsive">
+                                        </td>
+                                        <td>
+                                            <img src="./main/main_21.png" class="img-responsive">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table quater">
+                                <tr>
+                                        <td colspan="4">
+                                            <img src="./main/main3.png" class="img-responsive">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="./main/main31.png" class="img-responsive">
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">치료</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">여드름</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">여드름 흉터</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">기미</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">모공</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">잡티</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">주근깨</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">문신</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">오타모반</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">혹</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left">
+                                                <b style="text-align:center;">탄력</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">피부탄력</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">잔주름</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">이마주름</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈가주름</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">목주름</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">턱선처짐</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">입가주름</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">팔자주름</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">손등주름</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">색소</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">미백</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">블랙헤드</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">안면홍조</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">피부톤</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                        <td>
+                                            <img src="./main/main32.png" class="img-responsive">
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">지방이식</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">얼굴전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">얼굴부분</label></li>
+                                                </ul>
+                                                <b style="text-align:center;">벨로디</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">얼굴 리프팅</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left">
+                                                <b style="text-align:center;">눈</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">쌍꺼풀</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈매교정</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">매몰법</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">절개법</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">부분절개법</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">상안검</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">하안검</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">앞뒤트임</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈 재수술</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">코</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">콧대</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">콧등</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">코끝</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">매부리코</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">휜코</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">코 재수술</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                        <td>
+                                            <img src="./main/main33.png" class="img-responsive">
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">벨로디</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">엉덩이 리프팅</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">가슴 리프팅</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">바디 리프팅</label></li>
+                                                </ul>
+                                                <b style="text-align:center;">관리</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">지방분해</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">혈액순환</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">피로회복</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left">
+                                                <b style="text-align:center;">지방흡입</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">미니 지방흡입</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">팔 전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">복부전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">등 전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">허벅지 전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">스커트라인</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                        <td>
+                                            <img src="./main/main34.png" class="img-responsive">
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">필러</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">이마</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">콧대</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">입술</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">팔자</label></li>
+                                                </ul>
+                                                <b style="text-align:center;">반영구화장</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈썹</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">아이라인</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">입술</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left">
+                                                <b style="text-align:center;">보톡스</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">이마</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">미간</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈가</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">사각턱</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">승모근</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">종아리</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                    </tr>
+                            </table>
+                            <div class="col-sm-6 col-md-12">
+                                <h1>Footer header</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12">
+                        <h1>Footer header</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="btn-group btn-group-vertical" style="position:fixed;z-index:100;top:30px;margin-left:auto;">
+                <a href="#" class="btn btn-default">Left</a>
+                <a href="#" class="btn btn-default">Middle</a>
+                <a href="#" class="btn btn-default">Right</a>
+            </div>
+        -->
+        </div>
+    </body>
+
+</html>

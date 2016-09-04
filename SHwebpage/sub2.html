@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+        <link href="./font/font.css" type="text/css">
+        <style>
+                
+        #chkTable{
+            font-family: 'shLight';
+        }
+        #chkTable .li{
+            font-family: 'shLight';
+        }
+        #chkTable .lable{
+            font-family: 'shLight';
+        }
+
+        td{
+            padding:0px!important;
+            width:33%!important;
+            border:none!important;
+        }
+        .btn-default{
+            border:none;
+        }
+        .thumbnail{
+            width:30%!important;
+            float:left;
+            margin-bottom: 0px;
+            border: 0px;
+        }
+        .thumbnail .caption{
+            padding-bottom: 0px;
+        }
+        h5{
+            margin-top:5px;
+            margin-bottom: 5px;
+        }
+        .table{
+            margin-bottom: 0px;
+        }
+        .quater > tbody > tr > td{
+            width:25%!important;
+        }
+        li{
+            list-style: none;
+            font-size: 10px;
+        }
+        ul{
+            padding-left: 0px;
+            text-align: left;
+        }
+        input[type="radio"], input[type="checkbox"]{
+            margin-right: 3px;
+        }
+        .btn{
+            padding: 0px;
+            border : whitesmoke;
+        }
+        .top{
+            padding:5px!important;
+        }
+        .list-group-item{
+            background-color: rgba(255, 255, 255, 0);
+            border:none;
+            color: whitesmoke;
+        }
+        .nav > li > a {
+            padding:0px;
+        }
+        .nav-tabs > li {
+            width: 25%;
+        }
+        .pint > tbody > tr > td{
+            width:33%!important;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class="section">
+            <div class="container">
+                <div class="row" style="margin-top:0px!important;margin-bottom:0px!important;">
+                    <div class="col-md-12 text-right" style="padding-right:0px!important;">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default top">로그인</a>
+                            <a href="#" class="btn btn-default top">회원가입</a>
+                            <a href="#" class="btn btn-default top">오시는 길</a>
+                            <a href="#" class="btn btn-default top">공식 블로그</a>
+                            <a href="#" class="btn btn-default top">공식 페이스북</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:0px!important;">
+                    <div class="col-md-2" style="background-color:black;padding-left:0px!important;padding-right:0px!important;">
+                        <img src="./main/sidebar.png" style="position:absolute;z-index:-1000" class="img-responsive"/>
+                        <img src="./main/logo.png" class="img-responsive" style="z-index:100"/>
+                        <ul class="list-group" style="background-color:;">
+                            <li class="list-group-item"><a href="./sub1.html"></a><img src="./main/Introduction.png" style="margin-left:10%;"/></a></li>
+                            <li class="list-group-item"><a href="./sub2.html"><img src="./main/Beauty Program.png" style="margin-left:10%;"/></a></li>
+                            <li class="list-group-item"><a href="./sub3.html"><img src="./main/community.png" style="margin-left:10%;"/></a></li>
+                            <li class="list-group-item"><img src="./main/Sohyang Event.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><a href="./sub4.html"><img src="./main/Reservation.png" style="margin-left:10%;"/></a></li>
+                            <li class="list-group-item"><img src="./main/Interview.png" style="margin-left:10%;"/></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10" style="background-color:whitesmoke;padding-left:0px!important;padding-right:0px!important;">
+                        <div class="col-md-12" style="padding:0px!important;background-color:white;">
+                            <img src="./sub2/title.png" class="img-responsive" style="width:inherit">
+                            <table class="table quater" style="margin-left:2%;" id="chkTable">
+                                <tr>
+                                        <td colspan="4">
+                                            <img src="./main/main3.png" class="img-responsive">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="./main/main31.png" class="img-responsive">
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">치료</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                    <li><input type="checkbox" id="therapy1"/></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left">
+                                                <img src="./sub2/2.png"/>
+                                                <div style="width:10%;border:1px;">
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                    <input type="checkbox" id="therapy1" style="float:left;"/>
+                                                </div>
+                                                <div style="width:70%;float:left;">
+                                                <img src="./sub2/12.png" style="float:right;">
+                                            </div>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">색소</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">미백</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1" class="aa">블랙헤드</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">안면홍조</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">피부톤</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                        <td>
+                                            <img src="./main/main32.png" class="img-responsive">
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">지방이식</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">얼굴전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">얼굴부분</label></li>
+                                                </ul>
+                                                <b style="text-align:center;">벨로디</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">얼굴 리프팅</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left">
+                                                <b style="text-align:center;">눈</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">쌍꺼풀</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈매교정</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">매몰법</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">절개법</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">부분절개법</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">상안검</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">하안검</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">앞뒤트임</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈 재수술</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:33%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">코</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">콧대</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">콧등</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">코끝</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">매부리코</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">휜코</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">코 재수술</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                        <td>
+                                            <img src="./main/main33.png" class="img-responsive">
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">벨로디</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">엉덩이 리프팅</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">가슴 리프팅</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">바디 리프팅</label></li>
+                                                </ul>
+                                                <b style="text-align:center;">관리</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">지방분해</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">혈액순환</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">피로회복</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left">
+                                                <b style="text-align:center;">지방흡입</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">미니 지방흡입</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">팔 전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">복부전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">등 전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">허벅지 전체</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">스커트라인</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                        <td>
+                                            <img src="./main/main34.png" class="img-responsive">
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left;">
+                                                <b style="text-align:center;">필러</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">이마</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">콧대</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">입술</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">팔자</label></li>
+                                                </ul>
+                                                <b style="text-align:center;">반영구화장</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈썹</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">아이라인</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">입술</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="" style="width:50%;padding:5px;text-align:center;float:left">
+                                                <b style="text-align:center;">보톡스</b>
+                                                <ul>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">이마</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">미간</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">눈가</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">사각턱</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">승모근</label></li>
+                                                    <li><input type="checkbox" id="therapy1"/><label for="therapy1">종아리</label></li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/searchbtn.png"/></a>
+                                            <a class="btn btn-primary" style="float:right;"><img src="./main/unselecbtn.png"/></a>
+                                        </td>
+                                    </tr>
+                            </table>
+                            <table class="table pint" style="margin-left:2%;">
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2" style="padding-top:20px!important;padding-bottom:5px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <img src="./sub2/sample.png">
+                                        </td>
+                                        <td style="padding-left:20px!important;padding:20px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                        <td style="padding-left:20px!important;padding:20px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <td></td>    
+                                    <td>
+                                        <ul style="margin-left:10%!important;">
+                                            <li style="margin:10px!important;"><img src="./sub2/oc.png"/></li>
+                                            <li style="margin:10px!important;"><img src="./sub2/op.png"/></li>
+                                            <li style="margin:10px!important;"><img src="./sub2/o!.png"/></li>
+                                        </ul>
+                                    </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="padding-top:20px!important;padding-bottom:5px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p style="margin-left:10%!important;"><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                        <td style="padding-left:20px!important;padding:20px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                        <td style="padding-left:20px!important;padding:20px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <td>
+                                        <ul style="margin-left:10%!important;">
+                                            <li style="margin:10px!important;"><img src="./sub2/Vector Smart Object copy 9.png"/></li>
+                                            <li style="margin:10px!important;"><img src="./sub2/Vector Smart Object copy 10.png"/></li>
+                                            <li style="margin:10px!important;"><img src="./sub2/Vector Smart Object copy 11.png"/></li>
+                                        </ul>
+                                    </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td style="padding-top:20px!important;padding-bottom:5px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p style="margin-left:10%!important;"><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                        <td style="padding-left:20px!important;padding:20px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                        <td style="padding-left:20px!important;padding:20px!important;border:1px!important;border-width:1px!important;border-color:#000!important;">
+                                            <p><b style="font-size:20px!important;">미백토닝</b>&nbsp;&nbsp;SSKIN/레이저프로그램</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <td>
+                                        <ul style="margin-left:10%!important;">
+                                            <li style="margin:10px!important;"><img src="./sub2/Vector Smart Object copy 9.png"/></li>
+                                            <li style="margin:10px!important;"><img src="./sub2/Vector Smart Object copy 10.png"/></li>
+                                            <li style="margin:10px!important;"><img src="./sub2/Vector Smart Object copy 11.png"/></li>
+                                        </ul>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-sm-6 col-md-12">
+                                <h1>Footer header</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12">
+                        <h1>Footer header</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="btn-group btn-group-vertical" style="position:fixed;z-index:100;top:30px;margin-left:auto;">
+                <a href="#" class="btn btn-default">Left</a>
+                <a href="#" class="btn btn-default">Middle</a>
+                <a href="#" class="btn btn-default">Right</a>
+            </div>
+        -->
+        </div>
+    </body>
+
+</html>

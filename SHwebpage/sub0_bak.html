@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+        <style>
+        td{
+            padding:0px!important;
+            width:33%!important;
+            border:none!important;
+        }
+        .btn-default{
+            border:none;
+        }
+        .thumbnail{
+            width:30%!important;
+            float:left;
+            margin-bottom: 0px;
+            border: 0px;
+        }
+        .thumbnail .caption{
+            padding-bottom: 0px;
+        }
+        h5{
+            margin-top:5px;
+            margin-bottom: 5px;
+        }
+        .table{
+            margin-bottom: 0px;
+        }
+        .quater > tbody > tr > td{
+            width:25%!important;
+        }
+        li{
+            list-style: none;
+            font-size: 10px;
+        }
+        ul{
+            padding-left: 0px;
+            text-align: left;
+        }
+        input[type="radio"], input[type="checkbox"]{
+            margin-right: 3px;
+        }
+        .btn{
+            padding: 0px;
+            border : whitesmoke;
+        }
+        .top{
+            padding:5px!important;
+        }
+        .list-group-item{
+            background-color: rgba(255, 255, 255, 0);
+            border:none;
+            color: whitesmoke;
+        }
+        .nav > li > a {
+            padding:0px;
+        }
+        .nav-tabs > li {
+            width: 25%;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class="section">
+            <div class="container">
+                <div class="row" style="margin-top:0px!important;margin-bottom:0px!important;">
+                    <div class="col-md-12 text-right" style="padding-right:0px!important;">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default top">로그인</a>
+                            <a href="#" class="btn btn-default top">회원가입</a>
+                            <a href="#" class="btn btn-default top">오시는 길</a>
+                            <a href="#" class="btn btn-default top">공식 블로그</a>
+                            <a href="#" class="btn btn-default top">공식 페이스북</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:0px!important;">
+                    <div class="col-md-2" style="background-color:black;padding-left:0px!important;padding-right:0px!important;">
+                        <img src="./main/sidebar.png" style="position:absolute;z-index:-1000" class="img-responsive"/>
+                        <img src="./main/logo.png" class="img-responsive" style="z-index:100"/>
+                        <ul class="list-group" style="background-color:;">
+                            <li class="list-group-item"><img src="./main/Introduction.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Beauty Program.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/community.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Sohyang Event.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Reservation.png" style="margin-left:10%;"/></li>
+                            <li class="list-group-item"><img src="./main/Interview.png" style="margin-left:10%;"/></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10" style="background-color:whitesmoke;padding-left:0px!important;padding-right:0px!important;">
+                        <div class="col-md-12" style="padding:0px!important;background-color:white;">
+                            <img src="./sub00/title.png" class="img-responsive" style="margin-left:5%;margin-top:20px;width:inherit">
+                            <div role="tabpanel" style="margin-left:5%;margin-top:5%;margin-right:5%;width:inherit!important;">
+                              <!-- Nav tabs -->
+                              <ul class="nav nav-tabs" role="tablist" style="border:none;">
+                                <li role="presentation" class="active"><a href="#step1" aria-controls="step1" role="tab" data-toggle="tab"><img src="./sub00/step01.png"  class="img-responsive"><img src="./sub00/unstep01.png" style="display:none;"  class="img-responsive"></a></li>
+                                <li role="presentation"><a href="#step2" aria-controls="step2" role="tab" data-toggle="tab"><img src="./sub00/unstep02.png"  class="img-responsive"><img src="./sub00/step02.png" style="display:none;"  class="img-responsive"></a></li>
+                                <li role="presentation"><a href="#step3" aria-controls="step3" role="tab" data-toggle="tab"><img src="./sub00/unstep03.png"  class="img-responsive"><img src="./sub00/step03.png" style="display:none;"  class="img-responsive"></a></li>
+                                <li role="presentation"><a href="#step4" aria-controls="step4" role="tab" data-toggle="tab"><img src="./sub00/unstep04.png"  class="img-responsive"><img src="./sub00/step04.png" style="display:none;"  class="img-responsive"></a></li>
+                              </ul>
+                              <!-- Tab panes -->
+                              <div class="tab-content" style="padding-top:5%;">
+                                <div role="tabpanel" class="tab-pane active" id="step1">
+                                    <input type="checkbox" id="therapy1" style="margin:3%;"/><label for="therapy1">이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</label>
+                                    <img src="./sub00/line.png"  class="img-responsive" style="margin-bottom:3%;width:98%!important;";>
+                                    <b style="margin-left:3%!important;">개인정보 취급방침</b>
+                                    <label for="therapy1" style="float:right;margin-right:5%;">동의합니다.</label><input type="checkbox" id="therapy1" style="float:right;"/>
+                                    <div class="panel panel-default" style="margin-right:5%;margin-top:2%; ">
+                                      <div class="panel-body">
+                                        Basic panel example
+                                      </div>
+                                    </div>
+                                    <a href="#step4" aria-controls="step4" role="tab" data-toggle="tab" style=""><img src="./sub00/agree.png"  class="img-responsive" style="margin-left:40%!important;"></a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="step2">
+                                    <img src="./sub00/line.png"  class="img-responsive" style="margin-bottom:3%;width:98%!important;";>
+                                    <img src="./sub00/step02txt.png"  class="img-responsive" style="margin-bottom:3%;margin-left:3%;";>
+                                    <img src="./sub00/ipin.png"  class="img-responsive" style="margin-bottom:3%;float:left;";>
+                                    <img src="./sub00/phone.png"  class="img-responsive" style="margin-bottom:3%;float:left;";>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="step3">
+                                    <b style="margin-left:3%!important;">개인정보 입력</b>
+                                    <div class="panel panel-default" style="margin-right:5%;margin-top:2%; ">
+                                      <div class="panel-body">
+                                        Basic panel example
+                                      </div>
+                                    </div>
+                                    <div >
+                                    <a href="#step4" aria-controls="step4" role="tab" data-toggle="tab" style=""><img src="./sub00/joinbtn.png"  class="img-responsive" style="margin-left:30%!important;"></a>
+                                    <a href="#step4" aria-controls="step4" role="tab" data-toggle="tab" style="margin:0 auto;"><img src="./sub00/cancelbtn.png"  class="img-responsive" style=""></a>
+                                </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="step4">
+                                    <img src="./sub00/line.png"  class="img-responsive" style="margin-bottom:3%;width:98%!important;";>
+                                    <b style="margin-left:3%!important;">개인정보 입력</b><br><br>
+                                    <b style="margin-left:40%!important;">개인정보 입력</b>
+                                    <img src="./sub00/confirmtxt.png"  class="img-responsive" style="margin-bottom:5%;margin-left:3%;margin-top:5%;">
+                                    <img src="./sub00/loginbtn.png"  class="img-responsive" style="margin-left:40%;">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-12">
+                                <h1>Footer header</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12">
+                        <h1>Footer header</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="btn-group btn-group-vertical" style="position:fixed;z-index:100;top:30px;margin-left:auto;">
+                <a href="#" class="btn btn-default">Left</a>
+                <a href="#" class="btn btn-default">Middle</a>
+                <a href="#" class="btn btn-default">Right</a>
+            </div>
+        -->
+        </div>
+    </body>
+
+</html>

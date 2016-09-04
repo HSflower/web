@@ -1,0 +1,50 @@
+
+@font-face{
+	font-family: 'sh';
+	src: url('./copyfonts.com_tunga-bold.ttf');
+}
+
+@font-face{
+	font-family: 'sh';
+	src: url('./font/DIN Alternate Bold.ttf');
+}
+
+@font-face{
+	font-family: 'sh';
+	src: url('./font/NotoSansKR-Thin.otf');
+}
+
+@font-face{
+	font-family: 'shBlack';
+	src: url('./font/NotoSansKR-Black.otf');
+}
+
+@font-face{
+	font-family: 'shRegular';
+	src: url('./font/NotoSansKR-Regular.otf');
+}
+
+@font-face{
+	font-family: 'shMedium';
+	src: url('./font/NotoSansKR-Medium.otf');
+}
+
+@font-face{
+	font-family: 'shLight';
+	src: url('./font/NotoSansKR-Light.otf');
+}
+
+@font-face{
+	font-family: 'shBold';
+	src: url('./font/NotoSansKR-Bold.otf');
+}
+
+@font-face{
+	font-family: 'shDemiLight';
+	src: url('./font/NotoSansKR-DemiLight.otf');
+}
+
+.aa {
+	font-family: 'shDemiLight';
+	src: url('./font/NotoSansKR-DemiLight.otf');	
+}

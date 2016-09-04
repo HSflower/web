@@ -1,0 +1,342 @@
+@charset "utf-8";
+@import "css3-classes.less";
+/* jquery.videoPlayer.css - jQuery 비디오 플레이어 플러그인 스타일 문서, 2012 © yamoo9.com
+------------------------------------------------------------------------------------ */
+
+// 슬라이더 컬러 색상
+// 컬러 추가 시, 컬러 오버라이딩 함수 역시 추가.
+@pink		: #f4397d;
+@red		: #FF1212;
+@yellow		: #ffe14d; 
+@orange		: #f28a2f;
+@green		: #86d51b;
+@cyan		: #1ac2d5;
+@blue		: #27b2ff;
+@deepblue	: #1934d5;
+@purple		: #5b19d5;
+@gold		: #e6ca76;
+@silver		: #bfc1bf;
+
+
+// 컬러 오버라이딩
+.video-container.pink { 
+	@slider-begin-color: @pink;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.red { 
+	@slider-begin-color: @red;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.yellow { 
+	@slider-begin-color: @yellow;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.orange { 
+	@slider-begin-color: @orange;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.green { 
+	@slider-begin-color: @green;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.cyan { 
+	@slider-begin-color: @cyan;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.blue { 
+	@slider-begin-color: @blue;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.deepblue { 
+	@slider-begin-color: @deepblue;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.purple { 
+	@slider-begin-color: @purple;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.gold { 
+	@slider-begin-color: @gold;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+.video-container.silver { 
+	@slider-begin-color: @silver;
+	.seek .ui-slider-range { 
+		.linear-gradient(@slider-begin-color, darken(@slider-begin-color, 20%)); 
+		.box-shadow(inset 0 -3px 3px darken(@slider-begin-color, 20%));
+	}
+}
+
+// 컬러 오버라이딩 끝.
+
+
+/* ///////////////////////////////////////// 
+	=.video-container
+///////////////////////////////////////// */
+
+figure.video-container {
+	margin: 0; // 브라우저 기본 스타일 초기화
+	border: 1px solid #61625d;
+	font-family: Arial, Sans-Serief;
+	.border-radius(5px);
+	
+	video, 
+	.video-controls, 
+	.play-btn, 
+	.seek, 
+	.volume-box, 
+	.timer { float: left; } // 내부 요소에 float 레이아웃을 적용.
+	
+	.video-controls {
+	    background : #FFFFFF;
+		position: relative;
+		width: 100%; // float을 적용했기 때문에 width 설정.
+		height : 28px;
+		margin-top: 5px;
+		
+		.play-btn, .volume-btn, .full-screen { cursor: pointer; }
+		
+		.play-btn {
+			display: block;
+			width: 11px;
+			height: 11px;
+			margin-top : 8px;
+			margin-left : 14px;
+			margin-right: 10px;
+			background: url(play_btn.png) no-repeat;
+			.transition(opacity .2s ease-in-out);
+			&:hover { 
+				opacity: 1; 
+			}
+			&.pause-btn {
+				background: url(pause_btn.png) no-repeat;
+			} // .play-btn.pause-btn
+		} // .play-btn
+		
+		.ui-slider-range {
+			position: absolute;
+			z-index:1;
+			left: 0;
+			bottom: 0;
+			width: 100%;	
+			height: 100%;
+			border: 0;
+		} // 공통 .ui-slider-range
+	
+		.ui-slider-handle {
+		
+		} // 공통 .ui-slider-handle
+		
+		.seek {
+			position: relative;
+			width: 78%;
+			height: 2px;
+			margin-top: 12px;
+
+			.linear-gradient(#535353, #333);
+			.box-shadow(inset 0 -3px 3px #333);
+			
+			.ui-slider-range {
+				.border-radius(15px);
+				// .linear-gradient(#f4397d, #bd0a4b);
+				// .box-shadow(inset 0 -3px 3px #bd0a4b);
+				
+			}
+			
+			.ui-slider-handle {
+
+			}
+			
+			.ui-slider-handle.ui-state-hover {
+				background: #fff;
+			}
+		} // .seek
+		
+		.timer {
+			margin: 3px 0 0 5px;
+			color: #000;
+			font-size: 12px;
+			font-weight: bold;
+			margin-top: 7px;
+		} // .timer
+		.timer_duration {
+		    padding-left : 5px;
+			margin: 3px 0 0 5px;
+			color: #999;
+			font-size: 12px;
+			font-weight: bold;
+			margin-top: 7px;
+		} // .timer
+		
+		.volume-box {
+			overflow: hidden;
+			position: absolute;
+			right: 40px;
+			bottom: 8px;
+			width: 20px;
+			height: 30px;
+			color: #fff;
+			padding: 0 10px;
+			
+			&:hover {
+				height: 130px;
+				padding-top: 10px;
+				
+				.volume-slider {
+					visibility: visible;
+					opacity: 1;
+				}
+			} // .volume-box:hover
+			
+			.volume-slider {
+				visiblity: hidden;
+				position: relative;
+				left: 4px;
+				height: 100px;
+				width: 7px;
+				opacity: 0;
+				margin-left: 7px;
+				border: 1px solid #444;
+				.border-radius(15px);
+				.linear-gradient(#535353, #333);
+				.box-shadow(inset 0 3px 3px #333);
+				.transition(all 0.2s ease-in-out);
+				
+				.ui-slider-range {
+					.border-radius(15px);
+					.linear-gradient(#e6e6e6, #d5d5d5);
+					.box-shadow(inset 0 3px 3px #d5d5d5);
+				}
+				
+				.ui-slider-handle {
+					width: 12px;
+					height: 12px;
+					left: -4px;
+					margin-bottom: -0.6em;
+					margin-left: 0;
+					border: 1px solid #333;
+					.border-radius(10px);
+					.linear-gradient(#e6e6e6, #d5d5d5);
+					.box-shadow(inset 0 3px 3px #d5d5d5);
+					
+					&.ui-state-hover {
+						background: #fff;
+					}
+				}
+				
+			} // .volume-slider
+
+			.volume-btn {
+				position: absolute;
+				right: 2px;
+				bottom: -1px;
+				width: 18px;
+				height: 14px;
+				opacity: 1;
+				background: url(volume.png) no-repeat;
+				.transition(opacity .2s ease-in-out);
+				
+				&:hover {
+					opacity: 1;
+				}
+				&.volume-mute {
+					background: url(mute.png) no-repeat;
+				} // .volume-mute
+			} // .volume-btn
+			
+		} // .volume-box
+	
+	.full-screen {
+			position: absolute;
+			top:7px;
+			right : 15px;
+			width: 12px;
+			height: 12px;
+			background: url(fullscreen_btn.png) no-repeat;
+
+		} // .full-screen
+	
+	} // .video-controls
+	
+	/* ///////////////////////////////////////// 
+		=inner-ui
+	///////////////////////////////////////// */
+	
+	&.inner-ui {
+		position: relative;
+		padding: 0;
+		
+		video:hover+.video-controls {
+			visibility: visible;
+			opacity: 0.8;
+		}
+		
+		.video-controls {
+			visibility: hidden;
+			opacity: 0;
+			position: absolute;
+			bottom: 20px;
+			left: 80px;
+			width: 80%;
+			padding: 10px;
+			border: 1px solid #2e2e2e;
+			.border-radius(5px);
+			.linear-gradient(#313131, #000);
+			.box-shadow(inset 0 15px 35px #535353);
+			.transition(all 0.4s ease-in-out);
+			
+			&:hover {
+				visibility: visible;
+				opacity: 1;		
+			}
+			
+			.seek { width: 85%; } 
+			
+			.volume-box { bottom: 10px;
+				
+				&:hover { height: 100px; }
+				
+				.volume-slider {
+					height: 70px;
+					left: -5px;
+					
+					.ui-slider-handle { left: -3px; }
+				}
+				
+				.volume-btn { margin-right: 10px; }
+				
+			} // .volume-box
+		} // .inner-ui .video-controls 
+	} // .inner-ui
+	
+} // figure.video-container

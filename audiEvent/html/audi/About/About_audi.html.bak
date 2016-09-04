@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="/" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no" />
+<link href="../../../common/css/base.css"  rel="stylesheet" type="text/css"/>
+<link href="../../../common/css/about.css"  rel="stylesheet" type="text/css"/>
+<link href="../../../common/css/slider.css"  rel="stylesheet" type="text/css"/>
+<script src="../../../common/js/jquery-1.10.2.min.js"></script>
+<script src="../../../common/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="../../../common/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+<!--[if lte IE 8]><link href="../../../common/css/sliderIE8.css"  rel="stylesheet" type="text/css"/><![endif]-->
+<!--[if lte IE 9]><script src="../../../common/js/html5shiv.js"></script><![endif]-->
+<title>Audi A3 e-tron</title>
+</head>
+
+<body>
+	
+	<header class="sub01">
+		
+		<!--상단메뉴-->
+		<article class="topArea">
+			<nav class="w" id="gnb">
+				<img src="../../../common/img/main/Audi-logo.jpg" style="margin-left: 32px;">
+				<ul class="pc">
+					<li class="w01"><a href="#" class="on">About A3 e-tron</a></li>
+					<li class="w02"><a href="#">A3 e-tron Gallery</a></li>
+					<li class="w03 last"><a href="#">News &amp; Talk</a></li>
+				</ul>
+			</nav>
+		</article>
+		<!--//상단메뉴-->
+
+		<div class="gnbBg"></div>
+
+	</header>
+
+	<section id="container">
+
+
+		<article class="slide_box">
+			<h2 class="blind">슬라이더영역</h2>
+			<div class="h_Area">
+				<h1>About A3 e-tron</h1>
+				<h4><strong>The new Audi A3 e-tron</strong>은<br/> 일반 하이브리드 차량을 능가하는 아우디만의 혁신적인 방식으로<br/> 지속 가능한 이동성(Mobility)를 추구하는 아우디의 새로운 차량입니다.</h4>
+			</div>
+			
+			<section class="about_content">
+				<ul>
+					<li><img src="../../../common/img/about/about_01.png" alt="어바웃1"/>
+						<p>조용하고 부드러운 저비용<br/> 드라이브를 즐겨보세요<br/><br/>최대 50km까지 순수 전력으로 이동할 수 있어 출퇴근시 이용하기에 적합합니다</p>
+					</li>
+					<li><img src="../../../common/img/about/about_02.png" alt="어바웃2"/>
+						<p>언제 어디서든<br/>가솔린 엔진과 함께합니다<br/><br/>배터리 전력이 낮을때나 <br/>충전이 필요할 때<br/>언제든지 빠르게 파워를 제공합니다.</p>
+					</li>
+					<li><img src="../../../common/img/about/about_03.png" alt="어바웃3"/>
+						<p>상황에 따른<br/>최적의 성능을 위해<br/>전기와 가솔린을 조합하여<br/> 최상의 구동력을 제공합니다.</p>
+					</li>
+					<li><img src="../../../common/img/about/about_04.png" alt="어바웃4"/>
+						<p>탄소 질감, 자가 태양광 충전, <br/>홈 충전을 포함하여<br/>e-tron 오너들의 경험을 강화해주는<br/> 아우디 에너지를 설계합니다.</p>
+					</li>
+				</ul>
+			</section>
+			
+		
+	</section>
+	
+
+	<footer>
+		<article class="userWrap">
+			<ul>
+				<li><a href="#"><img src="../../../common/img/icon/audi.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/facebook.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/twitter.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/picture.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/blog.png" alt=""/></a></li>
+				<li class="uw_link first">Test-Drive</li>
+				<li class="uw_link">e-Newsletter</li>
+				<li class="uw_link">e-Catalog</li>
+				<li class="uw_copyright">COPYRIGHT© 2015 Audi Korea. ALL RIGHTS RESERVED    |   Audi Korea Privacy Policy</li>
+			</ul>
+			<div class="AudiTronLink">
+				<ul>
+					<li><a href="#"><img src="../../../common/img/icon/link_01.png" alt="" style="margin-top: 8px;"/></a></li>
+					<li><a href="#"><img src="../../../common/img/icon/link_02.png" alt="" style="margin-top: 8px;"/></a></li>
+				</ul>
+			</div>
+		</article>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="/" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no" />
+<link href="../../../common/css/base.css"  rel="stylesheet" type="text/css"/>
+<link href="../../../common/css/main.css"  rel="stylesheet" type="text/css"/>
+<link href="../../../common/css/slider.css"  rel="stylesheet" type="text/css"/>
+<link href="../../../common/css/sub.css"  rel="stylesheet" type="text/css"/>
+<link href="../../../common/css/video-js.css" rel="stylesheet" type="text/css">
+<script src="../../../common/js/jquery-1.10.2.min.js"></script>
+<script src="../../../common/js/video.js"></script>
+<script src="../../../common/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="../../../common/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+      <link href="../../../common/audiplayer/js/plugin/videoPlayer/jquery.videoPlayer.css" rel="stylesheet" type="text/css"/>
+        <link href="../../../common/audiplayer/css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="../../../common/audiplayer/js/libs/modernizr.min.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="../../../common/audiplayer/js/audiplayer.js" type="text/javascript"></script>
+        <script src="../../../common/audiplayer/js/plugin/videoPlayer/jquery.videoPlayer.js" type="text/javascript"></script>
+
+
+
+<!--[if lte IE 8]><link href="../../../common/css/sliderIE8.css"  rel="stylesheet" type="text/css"/><![endif]-->
+<!--[if lte IE 9]><script src="../../../common/js/html5shiv.js"></script><![endif]-->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".gallery_main").html("<video id='audiplayer' controls preload='auto'  width='800' height='480'>"
+		+"<source src='../../../common/videos/intro_audi(low).mp4' type='video/mp4' />"
+		+"</video>"
+		);
+		$("#1").addClass("boxLine");
+                $('#audiplayer').videoPlayer({
+		change_theme: false,
+                color : 'red'
+	});
+		
+	});
+	
+	
+	$(function(){
+		$(".videoView").click(function(){
+			var type = $(this).attr("type");
+			var url = $(this).attr("url");
+			var idx = $(this).attr("idx");
+			if (type == "mp4") {
+			
+				$(".gallery_main").html("<video id='audiplayer' controls preload='auto'  width='800' height='480'>"
+				+ "<source src='"+url+"' type='video/mp4' />"
+				+"</video>");
+                        $('#audiplayer').videoPlayer({
+		change_theme: false,
+                color : 'red'
+	});
+			
+			}else {
+				$(".gallery_main").html("<img src='"+url+"' style='width:805px;height:512px;' />");
+			}
+			
+			for(var i=1; i<=6; i++) {
+				if(i == idx ) {
+					$("#"+i).addClass("boxLine");
+				}else{
+					$("#"+i).removeClass("boxLine");
+				}
+			}
+			
+		});
+	});
+	
+	
+</script>
+<style type="text/css">
+#gallery_main {
+    background-color: #000;
+    overflow:hidden;
+    position:relative;
+    display:inline-block;
+    width: 805px;
+    height: 512px;
+}
+ 
+#video-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	opacity: 1;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+	background-image: linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
+ 
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.13, rgb(3,113,168)),
+		color-stop(1, rgb(0,136,204))
+	);
+}
+ 
+#gallery_main:hover #video-controls {
+	opacity: 1;
+}
+ 
+button {
+    background: rgba(0,0,0,.5);
+    border: 0;
+    color: #EEE;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+ 
+button:hover {
+    cursor: pointer;
+}
+ 
+#seekBar {
+    width: 360px;
+}
+ 
+#volume-bar {
+    width: 60px;
+}
+    
+video[poster]{
+	height:5%;
+	width:5%;
+}
+
+.play_icon{  position: absolute;
+  top: 26px;
+  left: 50px;
+  opacity: 0.6;
+}
+</style>
+<title>Audi A3 e-tron</title>
+</head>
+
+<body>
+	
+	<header class="sub01">
+		
+		<!--상단메뉴-->
+		<article class="topArea">
+			<nav class="w" id="gnb">
+				<a href="../../audi/step_audi.html"><img src="../../../common/img/main/Audi-logo.jpg" style="margin-left: 32px;"></a>
+				<ul class="pc">
+					<li class="w01"><a href="../../../html/audi/About/About_audi.html">About A3 e-tron</a></li>
+					<li class="w02"><a href="../../../html/audi/Gallery/Gallery_audi.html" class="on">A3 e-tron Gallery</a></li>
+					<li class="w03 last"><a href="../../../html/audi/News/News_audi.html">News &amp; Talk</a></li>
+				</ul>
+			</nav>
+		</article>
+		<!--//상단메뉴-->
+
+		<div class="gnbBg"></div>
+
+	</header>
+
+	<section id="container">
+		<article class="slide_box">
+			<!-- 메인 텍스트 -->
+			<h2 class="blind">슬라이더영역</h2>
+			<div class="h_Area">
+				<img src="../../../common/img/gallery/sub_02_Gallery_title.png" />
+				<!-- <h1>A3 e-tron Gallery</h1>
+				<h4>자세히 보고 싶은 영상이나 이미지를 선택해 보세요</h4> -->
+			</div>
+			
+			<article class="gallery_article" style="padding-top: 35px;">
+
+			<h2 class="blind">A3 e-tron Gallery</h2>
+
+			<div class="gallery">
+				<div class="gallery_main">
+					<!--<img src="../../../common/img/gallery/gallery_main.jpg" alt=""/> -->
+					<!-- <div id="video-controls">
+						<button type="button" id="play" class="play">Play</button>
+						<input type="range" id="seekBar" value="0">
+						<button type="button" id="mute">Mute</button>
+						<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+						<button type="button" id="fullScreen">Full-Screen</button>
+					</div> -->
+				</div>
+				
+				<ul>
+<!--					이미지의 경우 a태그와 img 태그만 쓰면 됨.
+                                        동영상의 경우 동영상 커버 이미지와 + <img src="../../../common/img/icon/play_03.png" alt="" class="play_icon"/>
+                                        을 같이 써주면됨-->
+					<li>
+                                            <a class="videoView" idx='1'  type='mp4' url='../../../common/videos/intro_audi(low).mp4' style="cursor:pointer;">
+						<img src="../../../common/videos/step_05.jpg" style="width:126px;height:80px;" alt="" id="1" />
+						<img src="../../../common/img/icon/play_03.png" alt="" class="play_icon"/></a>
+                                        </li>
+					<li><a class="videoView" idx='2'  type='jpg' url='../../../common/videos/step_05.jpg' style="cursor:pointer;"><img src="../../../common/videos/step_05.jpg" style="width:126px;height:80px;" alt="" id="2" /></a></li>
+					<li><a class="videoView" idx='3'  type='mp4' url='../../../common/videos/intro_audi(low).mp4' style="cursor:pointer;">
+						<img src="../../../common/videos/step_05.jpg" style="width:126px;height:80px;" alt="" id="3" />
+						<img src="../../../common/img/icon/play_03.png" alt="" class="play_icon"/></a>
+					</li>
+					<li><a class="videoView" idx='4'  type='jpg' url='../../../common/videos/step_02.jpg' style="cursor:pointer;"><img src="../../../common/videos/step_02.jpg" style="width:126px;height:80px;" alt="" id="4" /></a></li>
+					<li><a class="videoView" idx='5'  type='jpg' url='../../../common/videos/step_07.jpg' style="cursor:pointer;"><img src="../../../common/videos/step_07.jpg" style="width:126px;height:80px;" alt="" id="5" /></a></li>
+					<li><a class="videoView" idx='6'  type='mp4' url='../../../common/videos/sample_intro_3.mp4' style="cursor:pointer;"><video src="../../../common/videos/sample_intro_3.mp4" style="width:126px;height:80px;"alt="" id="6" /></video></a>
+					<a class="videoView" idx='6'  type='mp4' url='../../../common/videos/sample_intro_3.mp4' style="cursor:pointer;"><img src="../../../common/img/icon/play_03.png" alt="" class="play_icon"/></a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			
+		</article>
+		
+	</section>
+	
+	<footer style="margin-top: 100px;">
+		<article class="userWrap">
+			<ul>
+				<li><a href="#"><img src="../../../common/img/icon/audi.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/facebook.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/twitter.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/picture.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../../common/img/icon/blog.png" alt=""/></a></li>
+				<li class="uw_link first">Test-Drive</li>
+				<li class="uw_link">e-Newsletter</li>
+				<li class="uw_link">e-Catalog</li>
+				<li class="uw_copyright">COPYRIGHT© 2015 AUDI KOREA. ALL RIGHTS RESERVED    |   AUDI KOREA PRIVACY POLICY</li>
+			</ul>
+			<div class="AudiTronLink">
+				<ul>
+					<li><a href="#"><img src="../../../common/img/icon/link_01.png" alt="" style="width:137px;height:30px;border-left:1px solid #a3a3a3;border-right:1px solid #a3a3a3;" /></a></li>
+					<li><a href="#"><img src="../../../common/img/icon/link_02.png" alt="" /></a></li>
+				</ul>
+			</div>
+		</article>
+	</footer>
+</body>
+
+</html>

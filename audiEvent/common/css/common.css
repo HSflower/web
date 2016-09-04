@@ -1,0 +1,36 @@
+/*박스사이징적용*/
+.bb{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+
+
+/*마진*/
+.mb0{margin-bottom:0 !important}
+.mb5{margin-bottom:5px !important}
+.mb10{margin-bottom:10px !important}
+.mb15{margin-bottom:15px !important}
+.mb16{margin-bottom:16px !important}
+.mb20{margin-bottom:20px !important}
+.mb25{margin-bottom:25px !important}
+.mb30{margin-bottom:30px !important}
+
+/*패딩*/
+.pt0{padding-top:0 !important}
+.pl0{padding-left:0 !important}
+.pr15{padding-right:10px !important}
+
+/*정렬*/
+.txtL{text-align:left !important}
+.txtC{text-align:center !important}
+.txtR{text-align:right !important}
+
+
+/*버튼*/
+.bigBtn{display:inline-block;width:102px;height:35px;line-height:35px;font-size:1em;text-align:center;font-weight:bold;vertical-align:middle}
+.midBtn{display:inline-block;width:75px;height:28px;line-height:28px;font-size:0.8em;text-align:center;font-weight:bold;vertical-align:middle}
+button.bigBtn{width:104px;height:37px;font-size:1em;text-align:center;font-weight:bold;}
+button.midBtn{width:77px;height:30px;font-size:0.8em;text-align:center;font-weight:bold;}
+.bigBtn.orange{border:1px solid #b22600;color:#fff;background:#da3306;}
+.midBtn.orange{border:1px solid #b22600;color:#fff;background:#da3306;}
+
+
+/*배경색*/
+.bgG{background-color:#f7f7f7 !important}

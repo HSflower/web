@@ -1,0 +1,13 @@
+@import url('layout.css');
+@import url('common.css');
+
+
+/*어바웃*/
+.about_content{  position: relative;  width: 954px;  height: 450px;  margin: 0 auto;}
+.about_content ul{height:450px;  margin-top: 32px;}
+.about_content ul li{  width: 219px;  height: 448px; float: left;  margin-right: 23px; border:1px solid #a3a3a3; position:relative;}
+.about_content ul li p{   position: absolute;  bottom: 35px;  left: 25px;  color: #fff;  font-size: 14px;}
+.about_content ul li:first-child{  background:url('../img/about/about_01_bg.png');}
+.about_content ul li:nth-child(2){background:url('../img/about/about_02_bg.png');}
+.about_content ul li:nth-child(3){background:url('../img/about/about_03_bg.png');}
+.about_content ul li:last-child{  margin-right: 0px;background:url('../img/about/about_03_bg.png');}

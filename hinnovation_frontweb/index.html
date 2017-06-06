@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="desktop ie8 no-js" lang="en-US"><![endif]-->
+<!--[if IE 9 ]><html class="desktop ie9 no-js" lang="en-US"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>하이노베이션 | HInnovation</title>
+	
+<!--google api로 url 연결가능-->
+<style type="text/css">
+        @font-face{
+ 			font-family:"nbg";
+			src:url("fonts/NanumBarunGothic.eot");
+			src:local(※), url("fonts/NanumBarunGothic.woff") format("woff");
+			font-weight: normal;
+			font-style: normal;
+			 }
+	@font-face{
+	 font-family:"nbgb";
+	 src:url("fonts/NanumBarunGothicBold.eot");
+	 src:local(※), url("fonts/NanumBarunGothicBold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	 }
+</style>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript">/*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark meter nav output progress section summary subline time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/</script>
+		<![endif]-->
+		<script type="text/javascript">
+			if(Function('/*@cc_on return document.documentMode===10@*/')()){
+				document.documentElement.className+=' ie10';
+				}
+		</script>
+		<script type="text/javascript">
+		(function(H){
+			H.className=H.className.replace(/\bno-js\b/,'js')
+			})
+		(document.documentElement)
+		</script>
+		<script type="text/javascript">
+		if(window.navigator.userAgent.search("MSIE 7")>-1 && window.navigator.userAgent.search("Trident")>-1) 
+			{ alert("Hinnovation은 Chrome에서 최적화 되어있습니다.\n\n익스플로러 호환성 보기를 사용하고 계시네요\n호환성 보기를 해제하시거나 Chrome으로 다시 들어와주세요 :)\n\n 호환성 보기 해제 방법\n 1. [도구 -> 호환성 보기 해제]\n 2. [도구 -> 호환성 보기 설정 -> 모든 웹 사이트 표시 체크해제]\n\n감사합니다"); }</script>
+		
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700&amp;subset=latin,latin-ext">
+
+<!--스타일시트를 워드프레스 url로 받아오는 대신 network로 파일 다운후 파일에서 넣어주기-->
+<link rel='stylesheet' id='pe_theme_compressed-css'  href='css/theme.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pe_theme_init-css'  href='css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='main-style-css'  href='css/main.css' type='text/css' media='all' />
+
+<!--자바스크립트도 스타일시트와 같이(파일명구분해서잘받기)-->
+<script type='text/javascript' src='js/jquery/jquery.js'></script>
+<script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='js/selectivizr-min.js'></script>
+<script type='text/javascript' src='js/json2.min.js'></script>
+<script type='text/javascript' src='js/jquery.cycle.all.js'></script>
+
+<!--워드프레스 실행용
+<meta name="generator" content="WordPress 3.7.1" />
+-->
+
+
+<style type="text/css">
+body,.form-field span input,.form-field span textarea,.form-click input{font-family:'Open Sans';}
+</style>
+
+<!--폰트 아이콘-->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style type="text/css" id="pe-theme-custom-colors">
+	a{color:#3DB7CC;}
+	.feature:hover{color:#3DB7CC;}a:visited{color:#3DB7CC;}.desktop.navigation .nav-content a:hover{color:#3DB7CC;}.desktop.navigation .nav-content a.active{color:#3DB7CC;}.post-title a:hover{color:#3DB7CC;}.cat-item a:hover{color:#3DB7CC;}.widget-archive a:hover{color:#3DB7CC;}.filter.active, .filter:hover{color:#3DB7CC;}.recentcomments a:hover{color:#3DB7CC;}.widget-recent-entries a:hover{color:#3DB7CC;}.comment-meta a:hover{color:#3DB7CC;}.required{color:#3DB7CC;}.feature:hover .feature-icon{color:#3DB7CC;}.sticky .post-title a{color:#3DB7CC;}.gallery-next .bx-next:hover{background-color:#3DB7CC;}.gallery-prev .bx-prev:hover{background-color:#3DB7CC;}.parallax.colored{background-color:#3DB7CC;}.list-dot{background-color:#FFBB00;}.projectlist a:hover .projectinfo{background-color:#3DB7CC;}a.button{border-color:#3DB7CC;}.tagcloud a{border-color:#3DB7CC;}.tabs ul li.active a{border-top-color:#3DB7CC;}.post .tags a{border-color:#3DB7CC;}a:hover{color:#3DB7CC;}.sticky .post-title a:hover{color:#3DB7CC;}a.button:hover{border-color:#3DB7CC;}.tagcloud a:hover{border-color:#3DB7CC;}.post .tags a:hover{border-color:#3DB7CC;}</style>
+<style type="text/css">.filter {
+font-family: "open sans", arial, san-serif;
+font-style: normal;
+text-transform: lowercase;
+color: #424242;
+cursor: pointer;
+display: inline-block;
+}
+
+.desktop.navigation .nav-content a:hover, .desktop.navigation .nav-content a.active, .post-title a:hover, .cat-item a:hover, .widget-archive a:hover, .recentcomments a:hover, .widget-recent-entries a:hover, .comment-meta a:hover, .required {
+color: #3DB7CC!important;
+}
+
+p {
+font-family: 'nbg', arial, sans-serif;
+color: #606060;
+line-height: 1.6em;
+margin: 0 0 20px;
+}
+
+
+.post .tags a {
+border-color: #ccc;
+}
+
+.post .tags a:hover {
+border-color: #999;
+}
+
+.blog {
+margin-top: -10px;
+}
+
+.projectlist a:hover .projectinfo {
+background: transparent;
+}
+
+.projectlist a:hover .projectinfo {
+background: #3DB7CC;
+filter: alpha(opacity=80);
+-khtml-opacity:0.8;
+-moz-opacity:0.8;
+opacity:0.8;
+-webkit-transition: background .33s linear;
+-moz-transition: background .15s linear;
+-o-transition: background .15s linear;
+transition: background .15s linear;
+}
+
+.post .date {
+font-family: "open sans", arial, san-serif;
+font-style: normal;
+position: absolute;
+text-align: center;
+width: 40px;
+padding-bottom: 10px;
+top: 0;
+left: 0;
+text-transform: uppercase;
+font-size: 1.6em;
+letter-spacing: .2em;
+line-height: .8em;
+border-bottom: 1px solid #e9e9e9;
+}
+
+.projectlist a {
+display: block;
+padding-bottom: 0px;
+position: relative;
+}
+
+.button {margin: 5px!important;
+
+}
+
+.single_category_posts_widget {
+	line-height:20px;
+	color: #060606!important;
+
+}
+
+/*css미디어 쿼리로 media only screen으로하면 옛날브라우저에서 스타일이 적용되지않게함*/
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (   -moz-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+/* remove the existing icon */
+.feature-icon .icon-right-open-big2:before{
+   content:"" !important;
+}
+/* insert new icon image in its place */
+.feature-icon .icon-right-open-big2{
+   background:url(images/icon_right_open_big@2x.png) no-repeat 0 0;
+}
+/*기존이미지제거하고 새로운이미지삽입 어떤이미지인지 확인 : css언어파악하기 css파일(wp-위에 인클루드한거확인)의 feature클래스찾기*/
+/*마우스올라갓을때 새로운이미지삽입: 어떤이미지인지 확인*/
+/* insert new icon hover image */
+.feature:hover .feature-icon .icon-right-open-big2{
+   background-image:url(images/icon_right_open_big@2x_hover.png);
+}
+
+/* remove the existing icon */
+.feature-icon .icon-light-up2:before{
+   content:"" !important;
+}
+/* insert new icon image in its place */
+.feature-icon .icon-light-up2{
+   background:url(images/icon_light_up.png) no-repeat 0 0;
+}
+/* insert new icon hover image */
+.feature:hover .feature-icon .icon-light-up2{
+   background-image:url(images/icon_light_up_hover.png);
+}
+</style>
+
+<!-- google analytics 코드정리후 추가
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45700265-1', 'yellomobile.com');
+  ga('send', 'pageview');
+
+</script>
+-->
+</head>
+
+<body>
+
+<!-- contact button (2차개발시 추가)
+<button type="button" id="contact" onclick="location='#'">CONTACT
+</button>
+-->		
+
+<!-- Begin Navigation -->
+<nav class="clearfix">
+
+	<!-- Logo -->
+	<div class="logo">
+		<a id="top" href="#" title="Hinnovation">
+		<img src="images/HInnovation.jpg" width="129" height="32" alt="hinnovation"></a>
+	</div>
+
+	<!-- Mobile Nav Button -->
+	<button type="button" class="nav-button" data-toggle="collapse" data-target=".nav-content">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <!-- Navigation Links 뭔collapse도안쓰고 클래스명이저리길어 (서버올릴땐 http://hinnovation.com/#html이름하면됨)-->
+    <div class="navigation">
+		<div class="nav-content">
+			<ul class="nav">
+				<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item active menu-item-68"><a href="#">HOME</a></li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="#about-us">About us</a></li>
+<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="#services">Services</a></li>
+<li id="menu-item-459" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-459"><a href="#history">History</a></li>
+</ul>	
+</div>
+	</div>
+
+</nav>
+<!-- End Navigation 네비게이션코드공부★-->
+	
+
+<!--hidden-overlay공부:배경화면바꾸는거인듯:이미지교체하기-->
+<div class="hidden_overlay" data-src="images/03.png"></div>
+<div class="hiddenslide" data-src="images/bg_hi.jpg"></div>
+<div class="hiddenslide" data-src="images/bg_hi2.jpg"></div>
+<div class="hiddenslide" data-src="images/bg_hi3.jpg"></div>
+
+<!--홈페이지 첫장 섹션? clearfix!?-->
+<section id="sample-page" class="home-first-section hero clearfix">
+
+	<!-- Content 다크컨텐츠컨테이너는 어디에잇는클래스? -->
+	<div class="dark content container">
+
+		<!-- Headings 글씨게쏙바뀌게하는 티커는어디잇는클래스?-->
+		<div class="ticker">
+									<h1>Hi, HInnovation</h1>
+						<h1>Fresh, Easy, Smart</h1>
+						<h1>For your business</h1>
+							 	</div>
+
+	 	<!-- Buttons 콜투액션클래스는 어디서나옴? css에서-->
+	 			<ul class="call-to-action">
+						<li>
+								<a class="button" href="#about-us">
+					Go HInnovation				</a>
+			</li>
+								</ul>
+		
+		<!-- Slider Controls 슬라이더컨트롤클래스 위치찾기.용도도! 베가스아이디 위치찾기(css)일거같음-->
+		<ul class="slider-controls">
+			<li><a id="vegas-next" href="#">Next</a></li>
+			<li><a id="vegas-prev" href="#">Prev</a></li>
+		</ul>
+
+	</div>
+
+</section>
+<!-- End Hero 첫페이지끝낫다-->
+
+		
+<div class="slider-cover">
+	<section class="content aboutus" id="about-us" style="background-image:url('images/about.jpg');background-size:auto 100%;margin:0;">
+<!--콜투액션으로 첫페이지에서 불러오는 페이지임-->
+<!--타이틀그리드풀은 워드프레스에서 제공하는 클래스인가 js나 css-->
+	<div class="title grid-full">
+		<h2>About HInnovation</h2>
+		<span class="border"></span>
+		<div class="sub-heading">		
+		<!--<p style="text-align: center;">
+			<img class="aligncenter size-full wp-image-195" alt="about_text" src="images/about_text.png" width="449" height="78" /></p>-->
+		<p style="text-align: center;">항상 고객과 함께 성장하는 젊은 회사, HInnovation<br />
+고객과 항상 함께 성장하기 위해서,<br /> 고객의 마음을 얻기 위해서, <br />
+우리 아이들에게 좋은 먹거리를 전해주기 위해 <br />
+항상 혁신하고 나아가는 노력을 하고 있습니다. <br />
+ 하이노베이션과 함께 해주세요 :)</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+		</div>
+		<div class="clearfix"></div>
+			<!--	이미지 올라오는 부분
+	<div class="animated slide" data-appear-bottom-offset="100">
+<img src="images/about.jpg" width="100%">
+	<img class="peLazyLoading" src="data:image/gif;base64,R0lGODlhwAOuAYAAAAAAAAAAACH5BAEAAAAALAAAAADAA64BAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/DrkdBQAAOw==" data-original="images/about.jpg" data-original-hires="images/about.jpg" width="960" height="430" alt="" />-->
+	</div>
+	
+</section>
+</div>
+
+<!--page 4? wow data bomb-->
+<div class="slider-cover">
+<section class="portfolio clearfix" id="services">
+	<div class="content container">
+		<div class="title grid-full">
+			<h2>Services</h2>
+			<span class="border"></span>
+		</div>
+		<div class="clearfix">
+		</div>
+		<!-- Filters -->
+		<ul class="filtering grid-full">
+				
+		</ul>
+	</div>	
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+			<tr>
+				<td width="75%" valign="top"><a href="#services-buyrunfood"><img src="images/services.jpg" width="100%" alt=""/></a></td>
+				</td>
+			</tr>
+		</table>
+
+</section>
+</div>
+
+<!--service content : buyrunfood-->
+<div class="slider-cover">
+<section class="portfolio clearfix" id="services-buyrunfood">
+	<!--<div class="content container">
+	
+		<div class="title grid-full">
+			<h2>BuyrunFood</h2>
+		</div>
+		
+		<div class="clearfix">
+		</div>
+
+		
+	</div>-->
+	<!-- Filters -->
+		<ul class="filtering grid-full" style="padding:0;margin:0;width:100%;">
+		<img src="images/buyrunfood_contents.jpg" width="100%" style="padding:0;margin:0;"/>
+		</ul>
+</section>
+</div>
+
+<!--service content : buyrunpay
+<div class="slider-cover">
+<section class="portfolio clearfix" id="services-buyrunpay">
+	<div class="content container">
+		<div class="title grid-full">
+			<h2>BuyrunPay</h2>
+		</div>
+		<div class="clearfix">
+		</div>
+
+		<ul class="filtering grid-full">
+		<img  src="images/trd034tg01627.jpg" />
+		<button type="button" id="service-top" onclick="location='#services'">TOP</button>
+					</ul>
+	</div>
+</section>
+</div>
+-->
+
+<!--service content : DHcompany
+<div class="slider-cover">
+<section class="portfolio clearfix" id="services-DHcompany">
+	<div class="content container">
+		<div class="title grid-full">
+			<h2>DHcompany</h2>
+		</div>
+		<div class="clearfix">
+		</div>
+
+		<ul class="filtering grid-full">
+		<img  src="images/trd034tg01627.jpg" />
+		<button type="button" id="service-top" onclick="location='#services'">TOP</button>
+					</ul>
+	</div>
+</section>
+</div>
+-->
+
+<!--service content : lunch
+<div class="slider-cover">
+<section class="portfolio clearfix" id="services-lunch">
+	<div class="content container">
+		<div class="title grid-full">
+			<h2>Lunch4U</h2>
+		</div>
+		<div class="clearfix">
+		</div>
+
+		<ul class="filtering grid-full">
+		<img  src="images/trd034tg01627.jpg" />
+		<button type="button" id="service-top" onclick="location='#services'">TOP</button>
+					</ul>
+	</div>
+</section>
+</div>
+-->
+
+</section>
+</div>
+
+
+<div class="slider-cover">
+	<!-- Begin Services 3쪽(슬라이더)시작-->
+<section class="parallax colored clearfix" id="history" style="background-image:url('images/bg_hi.jpg');background-size:cover">
+	<div class="content dark padded container">
+			<div class="title grid-full">
+			<h2>History</h2>
+			<span class="border"></span>
+
+			<div class="sub-heading">			
+							</div>
+		</div>
+		
+		<div class="clearfix"></div>
+
+						<!-- Icons -->
+				<ul class="icons clearfix">
+									<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<!--마우스오버로 액션하느뉴툴팁-->
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>㈜하이노베이션 설립</li>
+																	<li><span class="list-dot"></span>서교동 사무실 오픈</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-right-open-big"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2012.07</h4>
+					</li>
+										<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>역삼동 사무실 이전</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-right-open-big"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2013.01</h4>
+					</li>
+										<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>스마트 컨슈밍 서비스 ‘꽁톨 Pay’ 런칭
+</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-right-open-big"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2013.04</h4>
+					</li>
+										<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>B2B Retail 서비스 ‘꽁톨 Supply’ 런칭</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-user"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2013.12</h4>
+					</li>
+										<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>꽁톨 Supply 월 매출 10억 돌파</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-user"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2014.08</h4>
+					</li>
+										<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>구로디지털단지 사무실 확장 이전</li>
+																	<li><span class="list-dot"></span>독산동 통합 물류센터 오픈</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-user"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2014.11</h4>
+					</li>
+										<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>꽁톨 > ‘바이런’으로 서비스명 변경</li>
+																	<li><span class="list-dot"></span>바이런 Food 월 매출 40억 돌파</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-right-open-big"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2014.12</h4>
+					</li>
+										<!-- Single Icon -->
+					<li class="overview animated entrance" data-appear-bottom-offset="100">
+
+						<!-- Feature List -->
+						<div class="tooltip">
+							<div class="details">
+																<ul class="feature-list yello_korean">
+																	<li><span class="list-dot"></span>1기 인턴 채용</li>
+																	<li><span class="list-dot"></span>온라인 마케팅 회사 ‘DH Company’ 인수</li>
+																</ul>
+															</div>
+						</div>
+
+						<span class="arrow-down"></span>
+						<span class="feature-icon feature">
+<img src="images/icon_right_open_big_z@2x.png" width="36" height="36">
+							<!--<i class="icon-user"></i>-->
+						</span>
+
+						<!-- Title -->
+						<h4>2015.01</h4>
+					</li>
+
+		</ul>
+				
+				
+	</div>	
+</section>
+</div>
+
+
+<!-- Begin Footer -->
+<footer id="footer" class="clearfix">
+	<div class="content dark container">
+
+	<ul class="animated hatch clearfix">
+		<li class="contact grid-2">
+			<p>
+				<i class="fa fa-mobile fa-inverse"></i>
+							<br>
+							070.8667.3754<br> fax) 02.6499.1231					</p>
+		</li>
+		<li class="contact grid-2">
+			<p>
+							<i class="icon-mail"></i>
+							<br>
+						welcome@buyrun.co.kr					</p>
+		</li>
+		<li class="contact grid-2">
+			<p>
+				<i class="fa fa-building fa-inverse"></i>
+							<br>
+						서울시 구로구 구로동 235<br>한신IT타워 1016,1017호					</p>
+		</li>
+		
+	</ul>
+</div>
+	<div class="copyright grid-full"><h6>©2015 Hinnovation. All Rights Reserved.</h6></div>
+
+	<!-- Contact Form 
+	<section id="contact-form" class="dark clearfix">
+		<div class="container">
+			<div class="contact-heading grid-full">
+				<h3>Get in touch!</h3>
+				<span class="border"></span>
+			</div>
+		</div>
+
+		<form action="#" method="post" class="contactForm peThemeContactForm container" id="contactform">
+			<fieldset>
+				<div class="form-field grid-half control-group">
+					<label for="name">Name</label>
+					<span><input type="text" class="required" name="name" id="name" /></span>
+				</div>
+				<div class="form-field grid-half  control-group">
+					<label for="email">Email</label>
+					<span><input type="email" class="required" name="email" id="email" /></span>
+				</div>
+				<div class="form-field grid-full control-group">
+					<label for="message">Message</label>
+					<span><textarea name="message" class="required" id="message"></textarea></span>
+				</div>
+			</fieldset>
+			<div class="form-click grid-full">
+				<span><button name="send" type="submit" dir="ltr" lang="en" class="submit" id="submit">Send</button></span>
+			</div>
+			<div id="contactFormSent" class="grid-full formSent alert"><strong>Yay!</strong> 소중한 의견 감사해요!</div>
+			<div id="contactFormError" class="grid-full formError alert"><strong>Error!</strong> 다시한번 확인해주세요!</div>
+		</form>	
+	</section>
+-->
+
+</footer>
+<!-- End Footer -->
+							
+<script type='text/javascript' src='js/pe/boot.js'></script>
+<script type='text/javascript' src='js/jquery.mobile.custom.min.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.lazyload.js'></script>
+<script type='text/javascript' src='js/admin/jquery.theme.utils.js'></script>
+<script type='text/javascript' src='js/pe/jquery.mousewheel.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.utils.browser.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.utils.geom.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.utils.preloader.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.utils.transition.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.transform.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.utils.youtube.js'></script>
+<script type='text/javascript' src='js/pe/froogaloop.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.utils.vimeo.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.video.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.videoPlayer.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.utils.ticker.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.backgroundSlider.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.flare.lightbox.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.simplethumb.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.flare.lightbox.render.gallery.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.flare.lightbox.render.image.js'></script>
+<script type='text/javascript' src='js/smoothscroll.js'></script>
+<script type='text/javascript' src='js/vegas.js'></script>
+<script type='text/javascript' src='js/jquery.imagesloaded.js'></script>
+<script type='text/javascript' src='js/jquery.mixitup.js'></script>
+<script type='text/javascript' src='js/jquery.countto.js'></script>
+<script type='text/javascript' src='js/jqueryui.js'></script>
+<script type='text/javascript' src='js/video.js'></script>
+<script type='text/javascript' src='js/bigvideo.js'></script>
+<script type='text/javascript' src='js/waypoints.js'></script>
+<script type='text/javascript' src='js/parallax.js'></script>
+<!--
+<script type='text/javascript'>
+/* <![CDATA[ */
+var peContactForm = {"url":"http%3A%2F%2F14.63.169.47%2Fwp-admin%2Fadmin-ajax.php"};
+/* ]]> */
+</script>
+-->
+<script type='text/javascript' src='js/pe/jquery.pixelentity.contactForm.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.widgets.js'></script>
+<script type='text/javascript' src='js/pe/jquery.pixelentity.widgets.contact.js'></script>
+<script type='text/javascript' src='js/navigation.js'></script>
+<script type='text/javascript' src='js/jquery.easing.js'></script>
+<script type='text/javascript' src='js/jquery.fittext.js'></script>
+<script type='text/javascript' src='js/jquery.localscroll.js'></script>
+<script type='text/javascript' src='js/jquery.scrollto.js'></script>
+<script type='text/javascript' src='js/jquery.appear.js'></script>
+<script type='text/javascript' src='js/jquery.waitforimages.js'></script>
+<script type='text/javascript' src='js/jquery.bxslider.js'></script>
+<script type='text/javascript' src='js/jquery.fitvids.js'></script>
+<script type='text/javascript' src='js/shortcodes.js'></script>
+<script type='text/javascript' src='js/main.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+<script type='text/javascript' src='js/pe/pixelentity.controller.js'></script>
+<!-- 서버 예시
+<script type='text/javascript' src='http://14.63.169.47/wp-content/themes/visia/js/main.js?ver=1384941270'></script>
+-->
+<!--
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _visia = {"ajax-loading":"http:\/\/14.63.169.47\/wp-content\/themes\/visia\/images\/ajax-loader.gif","home_url":"http:\/\/hinnovation.com\/"};
+/* ]]> */
+</script>
+-->
+<script type='text/javascript' src='js/pe/init.js'></script>
+
+</body>
+</html>

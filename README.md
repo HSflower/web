@@ -1,4 +1,7 @@
-# Web Development `Short-term Project`
+# Web Development (FE)
+- 웹 사이트 외주 개발 프로젝트(2014)
+- 물류 스타트업 인턴(2015)
+
 
 ## 1. audi event page project 
 	video

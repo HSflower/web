@@ -34,4 +34,15 @@
     + 그 외 배송집계표 출력기능 등 요청사항에 따라 수정 
     + 복제 사이트를 구축하고 새로운 기능들을 적용하여 고객들을 대상으로 편리성을 테스트하는 사이트 운영
 ### 6. Hinnovation 영업관리시스템
-https://github.com/lazyTitan157/PHP-web-project
+	프로젝트 기간 : 2015.04.06 ~ 2015.05.28
+	인원 : 1명
+	브라우저 : Internet Explorer, Chrome
+	사용언어 : html/css, javascript, SQL, PHP
+
+- [소스코드(깃허브 Repo.)](https://github.com/lazyTitan157/PHP-web-project) 
+- [구현 결과](http://buyrunicm.cafe24.com) (현재 호스팅 만료되어 사용 불가)
+* 프로젝트 소개
+  * 운영팀과 영업팀의 프로세스 흐름이 끊기고, 중복되는 작업들의 효율성을 높이기 위한 프로세스 통합을 목표로 프로젝트를 시작하였고, 각 팀의 요구사항을 통합하여 프로그래밍하여 웹페이지를 제작
+* 담당업무
+  * mockup을 이용하여 UI를 디자인하고, 기능을 설계한 후, 호스팅 서버를 이용해 MySQL데이터베이스를 사용해 DB를 제작하였고, 화면을 구현하면서 기능을 설계. 
+

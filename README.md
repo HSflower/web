@@ -18,12 +18,11 @@
 	● 수행인원 : 1명
 ![image](https://user-images.githubusercontent.com/8167433/73665906-44908b00-46e5-11ea-9edb-3cbe082deafd.png)
 ### 5. Hinnovation Logistics Order System
-```
-● 프로젝트 기간 : 2015.03.01~2015.04.09
-● 수행인원 : 1명
-● 브라우저 : Internet Explorer, Chrome, mobile
-● 사용언어 : html/css, javascript, SQL, PHP
-```
+	● 프로젝트 기간 : 2015.03.01~2015.04.09
+	● 수행인원 : 1명
+	● 브라우저 : Internet Explorer, Chrome, mobile
+	● 사용기술 : html/css, javascript, MariaDB, PHP
+
 ![image](https://user-images.githubusercontent.com/8167433/73665553-a43a6680-46e4-11ea-90e0-5a1ebf1aa247.png)
 * 프로젝트 소개 
   - 복제사이트의 독립적인 기능을 유지하면서 새로운 기능을 적용해보고, 검증한 후 기존 사이트에 필요한 기능들을 추가하고, 데이터베이스를 수정하는 등의 작업 수행하며 전반적인 사이트 관리
@@ -37,7 +36,7 @@
 	프로젝트 기간 : 2015.04.06 ~ 2015.05.28
 	인원 : 1명
 	브라우저 : Internet Explorer, Chrome
-	사용언어 : html/css, javascript, SQL, PHP
+	사용언어 : html/css, javascript, MariaDB, PHP
 
 - [소스코드(깃허브 Repo.)](https://github.com/lazyTitan157/PHP-web-project) 
 - [구현 결과](http://buyrunicm.cafe24.com) (현재 호스팅 만료되어 사용 불가)

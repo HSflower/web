@@ -1,7 +1,7 @@
 # 하이노베이션 회사소개페이지 (www.hinnovation.co.kr)
 
 ```
-●  프로젝트 기간 : 2015.02.15~2015.02.28
+●  프로젝트 기간 : 2015.02.15~2015.05.28
 ●  인원 : 3명(프로그래밍, 디자인, 기획)
 ●  브라우저 : Internet Explorer, Chrome
 ●  사용언어 : html/css, javascript, PHP
